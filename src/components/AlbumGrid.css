@@ -1,0 +1,118 @@
+
+/* src/components/AlbumGrid.css */
+.album-flipbook-card {
+    background-color: #777474; /* CHANGED: From black to #333 */
+    color: white; /* Keep text white for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+}
+
+/* ... rest of AlbumGrid.css remains the same ... */
+
+/* Wrapper for the HTMLFlipBook component */
+.flipbook-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    /* This box-shadow adds a subtle border around the flipbook itself */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5),
+                0 0 0 5px rgba(255, 255, 255, 0.05); /* White border for emphasis */
+}
+
+/* Styling for each individual page within the flipbook */
+.album-page {
+    background-color: #f8f9fa; /* Background for individual pages (usually white/off-white) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* --- Styles for the Album Flipbook Card (the main black box) --- */
+.album-flipbook-card {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+}
+
+/* Styles for the individual album's title (e.g., "Our First Year") within the flipbook card */
+.album-section-title {
+    color: #f8f9fa;
+    margin-bottom: 15px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Styles for the individual album's description within the flipbook card */
+.album-section-description {
+    color: #ced4da;
+    margin-bottom: 25px;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    text-align: center;
+}
+
+/* Wrapper for the HTMLFlipBook component */
+.flipbook-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5),
+                0 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+/* Styling for each individual page within the flipbook */
+.album-page {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Styling for images inside the album pages */
+.album-page img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Styling for the optional page number */
+.page-number {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+/* Media queries for fine-tuning responsiveness */
+@media (max-width: 991.98px) {
+    .album-flipbook-card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .album-section-title {
+        font-size: clamp(1.2rem, 3.5vw, 2rem);
+        margin-bottom: 10px;
+    }
+    .album-section-description {
+        font-size: clamp(0.8rem, 2.2vw, 1rem);
+        margin-bottom: 15px;
+    }
+}

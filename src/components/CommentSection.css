@@ -1,0 +1,241 @@
+
+/* src/components/CommentSection.css */
+
+/* This style will apply to the main container div within your CommentsSection component */
+/* It acts as the "white card" for the comments area */
+.comments-section-container {
+    background-color: white; /* Explicitly set to white */
+    color: #333; /* Default dark text for content within this card */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow for a white card */
+    width: 100%; /* Take full width of its parent column */
+    margin-left: auto; /* To help center it within a responsive column */
+    margin-right: auto;
+}
+
+/* NEW: Styles for the global stats display at the top of the comments section */
+.global-stats-in-comments {
+    display: flex;
+    justify-content: center; /* Center these items */
+    align-items: center;
+    gap: 20px; /* Space between likes and comments displays */
+    margin-bottom: 25px; /* Space below the global stats */
+    padding-bottom: 15px; /* Adds space before heading */
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.likes-section-in-comments,
+.comments-section-in-comments {
+    /* Copying styles from TopBar for consistency */
+    cursor: pointer; /* Still clickable, though it might not do anything specific here */
+    user-select: none;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.likes-section-in-comments i,
+.comments-section-in-comments i {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.likes-section-in-comments {
+    color: #e83e8c;
+    background-color: rgba(232, 62, 140, 0.1);
+}
+
+.comments-section-in-comments {
+    color: #6f42c1;
+    background-color: rgba(111, 66, 193, 0.1);
+}
+
+.likes-section-in-comments .badge,
+.comments-section-in-comments .badge {
+    font-size: 0.9em;
+    margin-left: 10px;
+    padding: 0.4em 0.8em;
+    border-radius: 12px;
+    color: white;
+}
+
+.likes-section-in-comments .badge {
+    background-color: #e83e8c;
+}
+
+.comments-section-in-comments .badge {
+    background-color: #6f42c1;
+}
+
+/* Existing styles below (no changes needed here for now) */
+
+/* Heading for the comments section */
+.comment-section-heading {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #007bff; /* Blue color for heading (contrasts well with white) */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container for comment input and button */
+.comment-input-container {
+    margin-bottom: 20px;
+    gap: 10px; /* Space between input and button */
+}
+
+/* Styling for the comment input field */
+.comment-input {
+    padding: 10px 15px;
+    background-color: #f8f9fa; /* Very light grey background for input field on white card */
+    color: #333; /* Dark text for input */
+    border: 1px solid #ddd; /* Light border for input */
+    border-radius: 20px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.comment-input::placeholder {
+    color: #888; /* Grey placeholder text */
+}
+
+.comment-input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+}
+
+/* Styling for the Add Comment button */
+.add-comment-btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green color for add button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    white-space: nowrap;
+}
+
+.add-comment-btn:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+.add-comment-btn:active {
+    transform: translateY(0);
+}
+
+/* List of comments */
+.comments-list {
+    list-style: none;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f2f2f2; /* Slightly darker white for the list itself */
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Lighter inner shadow */
+}
+
+.comment-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee; /* Light border between comments */
+    font-size: 0.95em;
+    color: #555; /* Dark text for comments */
+    background-color: #fff; /* White background for each comment item */
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.no-comments-message {
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    background-color: #fff;
+}
+
+/* Likes container */
+.likes-container {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.like-btn {
+    padding: 15px 25px;
+    background-color: #007bff; /* Blue color for like */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.like-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.like-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+}
+
+.like-btn span {
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+/* Bootstrap secondary button for "Back to Top" */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: 1px solid #6c757d;
+}
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Media queries for responsiveness within CommentSection */
+@media (max-width: 767.98px) {
+    .comment-input-container {
+        flex-direction: column;
+    }
+    .comment-input {
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+    .add-comment-btn {
+        width: 100%;
+    }
+
+    /* Adjust global stats display for smaller screens */
+    .global-stats-in-comments {
+        flex-direction: column; /* Stack them vertically on small screens */
+        gap: 10px;
+    }
+    .likes-section-in-comments,
+    .comments-section-in-comments {
+        width: 100%; /* Take full width when stacked */
+        justify-content: center; /* Center their content */
+    }
+}
+

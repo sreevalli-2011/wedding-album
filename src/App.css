@@ -1,0 +1,14 @@
+/* src/App.css (or src/index.css - whichever you use for global styles) */
+
+/* Global reset - make sure this is still at the very top */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;  background-color: #333;
+
+ 
+}
+
+
+
+/* Other App.css or global styles can go here */
