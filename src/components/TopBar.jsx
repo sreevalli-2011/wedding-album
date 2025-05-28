@@ -1,5 +1,6 @@
 // src/components/TopBar.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './TopBar.css';
 
@@ -27,7 +28,7 @@ const TopBar = () => {
   return (
     <nav className="custom-topbar">
       <div className="navbar-brand-left">
-        <a className="wedding-title" href="/">Wedding Album</a>
+        <Link to="/" className="wedding-title">Wedding Album</Link>
         <div className="subtitle">Our Beautiful Moments</div>
       </div>
 
