@@ -5,8 +5,9 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;  background-color: #333;
-
- 
+main {
+  padding-top: 100px; /* Adjust this value if your TopBar's height changes. */
+  box-sizing: border-box; /* Ensures padding is included in total height/width */
 }
 
 
