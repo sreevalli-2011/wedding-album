@@ -19,11 +19,12 @@ root.render(
       If you're using Redux, <Provider> should typically wrap <Router>.
     */}
     <Provider store={store}> {/* Redux Provider comes first for state */}
-      <Router> {/* BrowserRouter provides the context for useLocation */}
+      {/* ADD THE 'basename' PROP HERE */}
+      <Router basename="/album/"> {/* BrowserRouter provides the context for useLocation */}
         <App /> {/* Your main App component */}
       </Router>
     </Provider>
   </React.StrictMode>
 );
 
-//reportWebVitals();
+//reportWebVitals(); // Optional for performance metrics
