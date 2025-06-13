@@ -28,8 +28,13 @@ const TopBar = () => {
   return (
     <nav className="custom-topbar">
       <div className="navbar-brand-left">
+<<<<<<< HEAD
      <div className="album-subtitle">Wedding Album</div>
         <div className="subtitle">Beautiful Moments</div>
+=======
+      <div className="wedding-title">Wedding Album</div>
+        <div className="subtitle">Our Beautiful Moments</div>
+>>>>>>> 331fde6d31edb5ab1c5284feabebc931131447c1
       </div>
 
       <div className="stats-container-center">
