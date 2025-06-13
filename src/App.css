@@ -5,14 +5,12 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;  background-color: #333;
+}
 main {
   padding-top: 100px; /* Adjust this value if your TopBar's height changes. */
   box-sizing: border-box; /* Ensures padding is included in total height/width */
 }
 
-<<<<<<< HEAD
-=======
 
 
 /* Other App.css or global styles can go here */
->>>>>>> 331fde6d31edb5ab1c5284feabebc931131447c1
