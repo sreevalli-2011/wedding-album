@@ -66,14 +66,14 @@ function AlbumGrid({ albumId }) {
       albumFlipbookContentJSX = <p className="text-center p-5 text-white">Album with ID "{albumId}" not found.</p>;
     } else {
       albumFlipbookContentJSX = (
-        <div className="album-flipbook-card bg-black text-white p-4 rounded shadow">
+        <div className="album-flipbook-card  text-white p-4 rounded shadow">
           <div className="flipbook-wrapper">
             <HTMLFlipBook
-              width={350}
+              width={400}
               height={490}
               size="stretch"
               minWidth={300}
-              maxWidth={850}
+              maxWidth={750}
               minHeight={420}
               maxHeight={1200}
               maxShadowOpacity={0.5}
@@ -89,10 +89,10 @@ function AlbumGrid({ albumId }) {
           </div>
 
           <div className="flipbook-navigation d-flex justify-content-center mt-3">
-            <button onClick={() => flipBookRef.current?.pageFlip()?.flipPrev()} className="btn btn-primary mr-2">
+            <button onClick={() => flipBookRef.current?.pageFlip()?.flipPrev()} className="button">
               Previous Page
             </button>
-            <button onClick={() => flipBookRef.current?.pageFlip()?.flipNext()} className="btn btn-primary">
+            <button onClick={() => flipBookRef.current?.pageFlip()?.flipNext()} className="button">
               Next Page
             </button>
           </div>

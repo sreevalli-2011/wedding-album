@@ -1,5 +1,29 @@
 /* src/components/TopBar.css */
+/* Replace existing @import lines with this */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+.album-subtitle {
+  font-family: 'Open Sans', sans-serif; /* New font for subtitle */
+  font-size: clamp(2.5rem, 3vw, 1.5rem); /* Keep responsive sizing */
+  font-weight: 400; /* Regular weight for readability */
+  color: #333; /* Proposed warm muted taupe/rose (Color 3) */
+  margin-top: 0; /* Ensures no extra space above subtitle */
+  text-align: center; /* Ensures perfect centering */
+  font-weight: 300;
+}
 
+/* Ensure your main header container (if you have one) is also centered */
+.main-header {
+  text-align: center; /* Centers all content inside this container */
+  padding: 30px 20px; /* Adjust padding as needed */
+  /* background-color: #f8f9fa; Optional: your light neutral (Color 1) */
+}
+@media (max-width: 768px) {
+  .album-main-title {
+    /* Potentially slightly smaller sizes for tablets if clamp() isn't perfect */
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+}
+/* Your other global styles below this */
 .custom-topbar {
     background-color: white; /* <--- CRUCIAL: Set the main topbar background to white */
     color: #333; /* Default text color for the topbar */

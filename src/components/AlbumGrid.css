@@ -1,4 +1,5 @@
 
+
 /* src/components/AlbumGrid.css */
 .album-flipbook-card {
     background-color: #777474; /* CHANGED: From black to #333 */
@@ -116,3 +117,38 @@
         margin-bottom: 15px;
     }
 }
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for like */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+.flipbook-navigation button:first-child {
+    margin-right: 20px; /* Adjust this value to your desired space */
+}
+
+/* OR, if you prefer to add margin to the second button (Next Page) */
+.flipbook-navigation button:last-child {
+    margin-left: 20px; /* Adjust this value to your desired space */
+}
+
+/* Your general button styles */
+.button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Example color, adjust to your palette */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+
+

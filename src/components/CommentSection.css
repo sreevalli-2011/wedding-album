@@ -9,7 +9,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow for a white card */
-    width: 100%; /* Take full width of its parent column */
+    width: 70%; /* Take full width of its parent column */
     margin-left: auto; /* To help center it within a responsive column */
     margin-right: auto;
 }
@@ -32,7 +32,7 @@
     user-select: none;
     padding: 8px 18px;
     border-radius: 25px;
-    font-size: 1.05em;
+    font-size: 1.8em;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -42,7 +42,7 @@
 .likes-section-in-comments i,
 .comments-section-in-comments i {
     margin-right: 8px;
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 .likes-section-in-comments {
@@ -81,6 +81,7 @@
     color: #007bff; /* Blue color for heading (contrasts well with white) */
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Container for comment input and button */
@@ -99,7 +100,12 @@
     font-size: 1em;
     outline: none;
     transition: border-color 0.3s ease;
-    width: 100%;
+    width: 70%;
+    height: 20%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    margin-right: 10px; /* Space between input and button */
+    resize: none; /* Prevents resizing of the input field */
+    min-height: 50px; /* Minimum height for the input field */
 }
 
 .comment-input::placeholder {
@@ -119,7 +125,7 @@
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     white-space: nowrap;
@@ -148,9 +154,10 @@
 .comment-item {
     padding: 12px 15px;
     border-bottom: 1px solid #eee; /* Light border between comments */
-    font-size: 0.95em;
+    font-size: 1.5em;
     color: #555; /* Dark text for comments */
     background-color: #fff; /* White background for each comment item */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .comment-item:last-child {
@@ -238,4 +245,6 @@
         justify-content: center; /* Center their content */
     }
 }
+
+
 
