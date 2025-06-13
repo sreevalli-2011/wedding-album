@@ -3,11 +3,5 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-<<<<<<< HEAD
-=======
-    overflow-y: scroll;
-   overflow-x: hidden;
-
->>>>>>> 331fde6d31edb5ab1c5284feabebc931131447c1
 }
 
