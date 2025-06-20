@@ -5,12 +5,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+ "dev": "vite --port 5173 --strictPort",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "kill-node": "taskkill /f /im node.exe"
+
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",

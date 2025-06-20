@@ -20,7 +20,7 @@ root.render(
     */}
     <Provider store={store}> {/* Redux Provider comes first for state */}
       {/* ADD THE 'basename' PROP HERE */}
-      <Router basename="/album/"> {/* BrowserRouter provides the context for useLocation */}
+      <Router basename="/wedding-album/"> {/* BrowserRouter provides the context for useLocation */}
         <App /> {/* Your main App component */}
       </Router>
     </Provider>

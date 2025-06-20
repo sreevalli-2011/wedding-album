@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  // Add this 'base' property:
-  base: "/album/", // <--- ADD THIS LINE with your repository name and trailing slash
+  base: "/wedding-album/",
   plugins: [react()],
-});
+  server: {
+    port: 5173,
+    strictPort: true,
+    open: '/wedding-album/'
+  },
+  build: { // ONLY ONE build SECTION
+    outDir: 'dist/wedding-album',
+    emptyOutDir: true
+  }
+})
