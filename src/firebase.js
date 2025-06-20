@@ -7,7 +7,7 @@ import { getFirestore } from "firebase/firestore"; // This imports the Firestore
 // IMPORTANT: This part depends on whether you created src/firebaseConfig.js
 // Option A: If you put your config directly in this file (simpler for now)
 const firebaseConfig = {
-apiKey: import.meta.env.VITE_REACT_APP_GOOGLE_API_KEY,// Changed from process.env to import.meta.env and added VITE_ prefix
+apiKey: import.meta.env.VITE_GOOGLE_API_KEY,// Changed from process.env to import.meta.env and added VITE_ prefix
   authDomain: "wedding-album-95efe.firebaseapp.com",
   projectId: "wedding-album-95efe",
   storageBucket: "wedding-album-95efe.firebasestorage.app",
