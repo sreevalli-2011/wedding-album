@@ -1,11 +1,11 @@
-// src/index.js OR src/main.jsx (whichever is your root rendering file)
+
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter
 import { Provider } from 'react-redux'; // If you're using Redux
 import { store } from './redux/store';
-import './index.css'
+import './index.css';
 import App from './App.jsx'
 //import reportWebVitals from './reportWebVitals'; // Optional for performance metrics
 
